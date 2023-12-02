@@ -1,3 +1,3 @@
-def get_input():
-  f = open('./input/1.txt')
+def get_input(day):
+  f = open(f'./input/{day}.txt')
   return f.read().splitlines()

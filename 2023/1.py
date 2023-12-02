@@ -20,7 +20,7 @@ def str_to_int(n):
     return str_to_int_mapping[n]
 
 def part_one():
-  lines = get_input()
+  lines = get_input(1)
   calibration_values = []
   for line in lines:
     digits = re.findall(r'\d', line)
@@ -28,7 +28,7 @@ def part_one():
   return sum(calibration_values)
 
 def part_two():
-  lines = get_input()
+  lines = get_input(1)
   calibration_values = []
   for line in lines:
     # This (?=()) business deals with overlapping matches: https://stackoverflow.com/a/5616910
